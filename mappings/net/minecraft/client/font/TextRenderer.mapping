@@ -45,6 +45,7 @@ CLASS net/minecraft/class_679 net/minecraft/client/font/TextRenderer
 		ARG 2 x
 		ARG 3 y
 		ARG 4 color
+	METHOD method_2403 getStringBoundedHeight (Ljava/lang/String;I)I
 	METHOD method_2404 setRightToLeft (Z)V
 		ARG 1 rightToLeft
 	METHOD method_2405 init ()V

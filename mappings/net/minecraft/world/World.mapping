@@ -172,7 +172,7 @@ CLASS net/minecraft/class_99 net/minecraft/world/World
 		ARG 2 material
 		ARG 3 entity
 	METHOD method_293 hasEntityIn (Lnet/minecraft/class_646;Lnet/minecraft/class_1745;)Z
-		ARG 1 box
+		ARG 1 area
 		ARG 2 exclusion
 	METHOD method_294 (Lnet/minecraft/class_649;Lnet/minecraft/class_646;)F
 		ARG 1 pos
@@ -342,7 +342,7 @@ CLASS net/minecraft/class_99 net/minecraft/world/World
 		ARG 1 box
 		ARG 2 canBeEmpty
 	METHOD method_360 hasEntityIn (Lnet/minecraft/class_646;)Z
-		ARG 1 box
+		ARG 1 area
 	METHOD method_361 containsBlockWithMaterial (Lnet/minecraft/class_646;Lnet/minecraft/class_591;)Z
 		ARG 1 box
 		ARG 2 material

@@ -6,6 +6,7 @@ CLASS net/minecraft/realms/RealmsClickableScrolledSelectionList net/minecraft/re
 		ARG 3 top
 		ARG 4 bottom
 		ARG 5 entryHeight
+	METHOD getItemCount ()I
 	METHOD getMaxPosition ()I
 	METHOD getScroll getScrollAmount ()I
 	METHOD getScrollbarPosition ()I
@@ -16,6 +17,8 @@ CLASS net/minecraft/realms/RealmsClickableScrolledSelectionList net/minecraft/re
 		ARG 1 mouseX
 		ARG 2 mouseY
 		ARG 3 delta
+	METHOD renderBackground ()V
+	METHOD renderItem (IIIIII)V
 	METHOD scroll (I)V
 		ARG 1 amount
 	METHOD selectItem (IZII)V
@@ -24,4 +27,3 @@ CLASS net/minecraft/realms/RealmsClickableScrolledSelectionList net/minecraft/re
 		ARG 4 lastMouseY
 	METHOD setLeftPos setXPos (I)V
 		ARG 1 x
-	METHOD width ()I

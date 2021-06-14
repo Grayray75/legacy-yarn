@@ -15,10 +15,10 @@ CLASS net/minecraft/class_1036 net/minecraft/client/render/WorldRenderer
 	FIELD field_4437 scheduleTerrainUpdate Z
 	FIELD field_4438 LOGGER Lorg/apache/logging/log4j/Logger;
 	FIELD field_4439 MOON_PHASES Lnet/minecraft/class_1605;
-	FIELD field_4440 SUN Lnet/minecraft/class_1605;
-	FIELD field_4441 CLOUDS Lnet/minecraft/class_1605;
-	FIELD field_4442 END_SKY Lnet/minecraft/class_1605;
-	FIELD field_4443 FORCEFIELD Lnet/minecraft/class_1605;
+	FIELD field_4440 SUN_TEXTURE Lnet/minecraft/class_1605;
+	FIELD field_4441 CLOUDS_TEXTURE Lnet/minecraft/class_1605;
+	FIELD field_4442 END_SKY_TEXTURE Lnet/minecraft/class_1605;
+	FIELD field_4443 FORCEFIELD_TEXTURE Lnet/minecraft/class_1605;
 	FIELD field_4444 client Lnet/minecraft/class_669;
 	FIELD field_4445 textureManager Lnet/minecraft/class_1232;
 	FIELD field_4446 entityRenderDispatcher Lnet/minecraft/class_1135;
@@ -49,3 +49,6 @@ CLASS net/minecraft/class_1036 net/minecraft/client/render/WorldRenderer
 	METHOD method_3542 scheduleTerrainUpdate ()V
 	METHOD method_3546 renderStars ()V
 	CLASS class_1037 ChunkInfo
+		FIELD field_4469 direction Lnet/minecraft/class_1383;
+		METHOD <init> (Lnet/minecraft/class_1036;Lnet/minecraft/class_1111;Lnet/minecraft/class_1383;I)V
+			ARG 3 direction
