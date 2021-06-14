@@ -89,6 +89,7 @@ CLASS net/minecraft/class_689 net/minecraft/client/gui/widget/TextFieldWidget
 		ARG 1 color
 	METHOD method_2541 getCursor ()I
 	METHOD method_2542 setSelectionEnd (I)V
+		ARG 1 index
 	METHOD method_2543 hasBorder ()Z
 	METHOD method_2544 isFocused ()Z
 	METHOD method_2545 getSelectionEnd ()I
