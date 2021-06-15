@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1834 net/minecraft/entity/ai/path/EntityNavigation
+	FIELD field_7832 followRange Lnet/minecraft/class_1766;
+	FIELD field_7833 mob Lnet/minecraft/class_1753;
+	FIELD field_7834 world Lnet/minecraft/class_99;
+	FIELD field_7836 speed D
+	METHOD <init> (Lnet/minecraft/class_1753;Lnet/minecraft/class_99;)V
+		ARG 1 mob
+		ARG 2 world
+	METHOD method_7414 setSpeed (D)V
+		ARG 1 speed
+	METHOD method_7415 (DDD)Lnet/minecraft/class_620;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_7421 (Lnet/minecraft/class_1372;)Lnet/minecraft/class_620;
+		ARG 1 pos
+	METHOD method_7427 getFollowRange ()F
+	METHOD method_7429 tick ()V
