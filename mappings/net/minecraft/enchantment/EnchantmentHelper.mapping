@@ -4,7 +4,8 @@ CLASS net/minecraft/class_66 net/minecraft/enchantment/EnchantmentHelper
 	FIELD field_158 ENTITY_DAMAGE_LISTENER Lnet/minecraft/class_66$class_70;
 	FIELD field_159 ON_DAMAGE_LISTENER Lnet/minecraft/class_66$class_68;
 	FIELD field_160 ON_ATTACK_LISTENER Lnet/minecraft/class_66$class_67;
-	METHOD method_101 (Lnet/minecraft/class_66$class_69;[Lnet/minecraft/class_2056;)V
+	METHOD method_101 forEachEnchantment (Lnet/minecraft/class_66$class_69;[Lnet/minecraft/class_2056;)V
+		ARG 0 consumer
 		ARG 1 stacks
 	METHOD method_102 setEnchantments (Ljava/util/Map;Lnet/minecraft/class_2056;)V
 		ARG 0 enchantments
@@ -19,6 +20,9 @@ CLASS net/minecraft/class_66 net/minecraft/enchantment/EnchantmentHelper
 		ARG 0 rntity
 	METHOD method_106 (Lnet/minecraft/class_1752;)I
 		ARG 0 entity
+	METHOD method_107 onUserDamaged (Lnet/minecraft/class_1752;Lnet/minecraft/class_1745;)V
+		ARG 0 user
+		ARG 1 attacker
 	METHOD method_108 getEnchantments (Lnet/minecraft/class_2056;)Ljava/util/Map;
 		ARG 0 stack
 	METHOD method_111 (ILnet/minecraft/class_2056;)Ljava/util/Map;
@@ -30,6 +34,9 @@ CLASS net/minecraft/class_66 net/minecraft/enchantment/EnchantmentHelper
 		ARG 0 entity
 	METHOD method_114 (Lnet/minecraft/class_1752;)I
 		ARG 0 entity
+	METHOD method_115 onTargetDamaged (Lnet/minecraft/class_1752;Lnet/minecraft/class_1745;)V
+		ARG 0 user
+		ARG 1 target
 	METHOD method_116 (Lnet/minecraft/class_1752;)I
 		ARG 0 entity
 	METHOD method_117 (Lnet/minecraft/class_1752;)Z
@@ -56,7 +63,7 @@ CLASS net/minecraft/class_66 net/minecraft/enchantment/EnchantmentHelper
 	CLASS class_68 OnDamagedWith
 		FIELD field_163 livingEntity Lnet/minecraft/class_1752;
 		FIELD field_164 attackedEntity Lnet/minecraft/class_1745;
-	CLASS class_69 Listener
+	CLASS class_69 Consumer
 		METHOD method_123 accept (Lnet/minecraft/class_64;I)V
 			ARG 1 enchantment
 			ARG 2 power

@@ -4,6 +4,9 @@ CLASS net/minecraft/class_192 net/minecraft/block/DoorBlock
 	FIELD field_870 HALF Lnet/minecraft/class_390;
 	FIELD field_871 FACING Lnet/minecraft/class_389;
 	FIELD field_872 OPEN Lnet/minecraft/class_388;
+	METHOD method_815 (Lnet/minecraft/class_99;Lnet/minecraft/class_1372;Z)V
+		ARG 1 world
+		ARG 2 pos
 	CLASS class_193 HalfType
 		FIELD field_873 UPPER Lnet/minecraft/class_192$class_193;
 		FIELD field_874 LOWER Lnet/minecraft/class_192$class_193;

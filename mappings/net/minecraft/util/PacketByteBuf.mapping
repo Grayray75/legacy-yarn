@@ -161,7 +161,5 @@ CLASS net/minecraft/class_1435 net/minecraft/util/PacketByteBuf
 		ARG 1 i
 		ARG 2 j
 	METHOD writeByte (I)Lio/netty/buffer/ByteBuf;
-	METHOD writeInt (I)Lio/netty/buffer/ByteBuf;
-	METHOD writeShort (I)Lio/netty/buffer/ByteBuf;
 	METHOD writerIndex (I)Lio/netty/buffer/ByteBuf;
 		ARG 1 i

@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_1839 net/minecraft/util/RandomVectorGenerator
+	METHOD method_7437 findTarget (Lnet/minecraft/class_1760;II)Lnet/minecraft/class_649;
+	METHOD method_7440 findTarget (Lnet/minecraft/class_1760;IILnet/minecraft/class_649;)Lnet/minecraft/class_649;
+		ARG 0 mob

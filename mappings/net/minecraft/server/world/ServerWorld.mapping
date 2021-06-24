@@ -7,6 +7,7 @@ CLASS net/minecraft/class_1635 net/minecraft/server/world/ServerWorld
 	FIELD field_6626 ready Z
 	FIELD field_6627 idleTimeout I
 	FIELD field_6628 portalTeleporter Lnet/minecraft/class_108;
+	FIELD field_6629 mobSpawnerHelper Lnet/minecraft/class_107;
 	FIELD field_6632 BONUS_CHEST_LOOT_TABLE Ljava/util/List;
 	FIELD field_6633 players Ljava/util/List;
 	FIELD field_6634 LOGGER Lorg/apache/logging/log4j/Logger;
