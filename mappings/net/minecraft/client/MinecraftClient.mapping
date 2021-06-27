@@ -103,7 +103,7 @@ CLASS net/minecraft/class_669 net/minecraft/client/MinecraftClient
 	METHOD method_2225 isIntegratedServerRunning ()Z
 	METHOD method_2226 isInSingleplayer ()Z
 	METHOD method_2227 getServer ()Lnet/minecraft/class_1315;
-	METHOD method_2228 start ()V
+	METHOD method_2228 stopIntegratedServer ()V
 	METHOD method_2229 getSnooper ()Lnet/minecraft/class_1728;
 	METHOD method_2230 getTime ()J
 	METHOD method_2231 isWindowFocused ()Z
