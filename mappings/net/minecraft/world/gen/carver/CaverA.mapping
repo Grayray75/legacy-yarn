@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_425 net/minecraft/world/gen/carver/CaverA
-	METHOD method_1511 (JIILnet/minecraft/class_416;DDD)V
-		ARG 1 seed
-	METHOD method_1512 (JIILnet/minecraft/class_416;DDDFFFIID)V
-		ARG 1 seed
