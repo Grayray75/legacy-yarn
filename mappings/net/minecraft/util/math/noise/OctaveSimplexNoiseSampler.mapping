@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_585 net/minecraft/util/math/noise/OctaveSimplexNoiseSampler
+	FIELD field_2165 octaveSamplers [Lnet/minecraft/class_586;
+	FIELD field_2166 octaveCount I
+	METHOD <init> (Ljava/util/Random;I)V
+		ARG 1 random
+		ARG 2 octaveCount
+	METHOD method_1793 sample (DD)D
+		ARG 1 x
+		ARG 3 y

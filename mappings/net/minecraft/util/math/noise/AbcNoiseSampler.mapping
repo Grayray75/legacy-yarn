@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_583 net/minecraft/util/math/noise/AbcNoiseSampler
+	FIELD field_2154 originX D
+	FIELD field_2155 originY D
+	FIELD field_2156 originZ D
+	FIELD field_2157 permutations [I
+	METHOD <init> (Ljava/util/Random;)V
+		ARG 1 random
+	METHOD method_1789 sample ([DDDDIIIDDDD)V
