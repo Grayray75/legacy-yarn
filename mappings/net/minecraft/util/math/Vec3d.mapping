@@ -1,42 +1,93 @@
 CLASS net/minecraft/class_649 net/minecraft/util/math/Vec3d
+	COMMENT An immutable vector composed of 3 doubles.
+	COMMENT
+	COMMENT <p>This vector class is used for representing position, velocity,
+	COMMENT rotation, color, etc.
+	COMMENT
+	COMMENT @see Vec3i
 	FIELD field_2422 x D
 	FIELD field_2423 y D
 	FIELD field_2424 z D
 	METHOD <init> (DDD)V
+		COMMENT Creates a vector of the given coordinates.
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 	METHOD <init> (Lnet/minecraft/class_1400;)V
+		COMMENT Copies the given vector.
 		ARG 1 vec
 	METHOD method_2072 normalize ()Lnet/minecraft/class_649;
+		COMMENT Normalizes this vector.
+		COMMENT
+		COMMENT <p>Normalized vector is a vector with the same direction but with
+		COMMENT length 1. Each coordinate of normalized vector has value between 0
+		COMMENT and 1.
+		COMMENT
+		COMMENT @return the normalized vector of this vector
 	METHOD method_2073 subtract (DDD)Lnet/minecraft/class_649;
+		COMMENT Subtracts the given coordinates from this vector.
+		COMMENT
+		COMMENT @see #relativize(Vec3d)
+		COMMENT @return the difference between this vector and the given vector
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 	METHOD method_2074 rotateX (F)Lnet/minecraft/class_649;
-	METHOD method_2075 reverseSubtract (Lnet/minecraft/class_649;)Lnet/minecraft/class_649;
+		COMMENT Rotates this vector by the given angle counterclockwise around the X axis.
+		ARG 1 angle
+			COMMENT the angle in radians
+	METHOD method_2075 relativize (Lnet/minecraft/class_649;)Lnet/minecraft/class_649;
+		COMMENT Subtracts this vector from the given vector.
+		COMMENT
+		COMMENT @see #subtract(Vec3d)
+		COMMENT @return the difference between the given vector and this vector
 		ARG 1 vec
 	METHOD method_2076 (Lnet/minecraft/class_649;D)Lnet/minecraft/class_649;
 		ARG 1 vec
 	METHOD method_2077 length ()D
+		COMMENT Returns the length of this vector.
 	METHOD method_2078 add (DDD)Lnet/minecraft/class_649;
+		COMMENT Returns the sum of this vector and the given vector.
+		COMMENT
+		COMMENT @see #add(Vec3d)
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 	METHOD method_2079 rotateY (F)Lnet/minecraft/class_649;
+		COMMENT Rotates this vector by the given angle counterclockwise around the Y axis.
+		ARG 1 angle
+			COMMENT the angle in radians
 	METHOD method_2080 dotProduct (Lnet/minecraft/class_649;)D
+		COMMENT Returns the dot product of this vector and the given vector.
 		ARG 1 vec
 	METHOD method_2081 (Lnet/minecraft/class_649;D)Lnet/minecraft/class_649;
 		ARG 1 vec
 	METHOD method_2082 crossProduct (Lnet/minecraft/class_649;)Lnet/minecraft/class_649;
+		COMMENT Returns the cross product of this vector and the given vector.
 		ARG 1 vec
 	METHOD method_2083 (Lnet/minecraft/class_649;D)Lnet/minecraft/class_649;
 		ARG 1 vec
 	METHOD method_2084 subtract (Lnet/minecraft/class_649;)Lnet/minecraft/class_649;
+		COMMENT Subtracts the given vector from this vector.
+		COMMENT
+		COMMENT @see #subtract(double, double, double)
+		COMMENT @see #relativize(Vec3d)
+		COMMENT @return the difference between this vector and the given vector
 		ARG 1 vec
 	METHOD method_2085 add (Lnet/minecraft/class_649;)Lnet/minecraft/class_649;
+		COMMENT Returns the sum of this vector and the given vector.
+		COMMENT
+		COMMENT @see #add(double, double, double)
 		ARG 1 vec
 	METHOD method_2086 distanceTo (Lnet/minecraft/class_649;)D
+		COMMENT Returns the distance between this vector and the given vector.
+		COMMENT
+		COMMENT @see #squaredDistanceTo(Vec3d)
 		ARG 1 vec
 	METHOD method_2087 squaredDistanceTo (Lnet/minecraft/class_649;)D
+		COMMENT Returns the squared distance between this vector and the given vector.
+		COMMENT
+		COMMENT <p>Can be used for fast comparison between distances.
+		COMMENT
+		COMMENT @see #distanceTo(Vec3d)
 		ARG 1 vec

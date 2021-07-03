@@ -6,6 +6,7 @@ CLASS net/minecraft/class_646 net/minecraft/util/math/Box
 	FIELD field_2411 maxY D
 	FIELD field_2412 maxZ D
 	METHOD <init> (DDDDDD)V
+		COMMENT Creates a box of the given positions as corners.
 		ARG 1 x1
 		ARG 3 y1
 		ARG 5 z1
@@ -13,10 +14,11 @@ CLASS net/minecraft/class_646 net/minecraft/util/math/Box
 		ARG 9 y2
 		ARG 11 z2
 	METHOD <init> (Lnet/minecraft/class_1372;Lnet/minecraft/class_1372;)V
-		ARG 1 pos1
-		ARG 2 pos2
-	METHOD method_2054 getAverage ()D
-	METHOD method_2055 incrementAll (DDD)Lnet/minecraft/class_646;
+		COMMENT Creates a box of the given positions as corners.
+		ARG 1 minPos
+		ARG 2 maxPos
+	METHOD method_2054 getAverageSideLength ()D
+	METHOD method_2055 shrink (DDD)Lnet/minecraft/class_646;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
@@ -28,9 +30,13 @@ CLASS net/minecraft/class_646 net/minecraft/util/math/Box
 		ARG 8 y2
 		ARG 10 z2
 	METHOD method_2057 union (Lnet/minecraft/class_646;)Lnet/minecraft/class_646;
+		COMMENT Creates the minimum box that contains this box and the given box.
+		ARG 1 box
+	METHOD method_2058 (Lnet/minecraft/class_646;D)D
 		ARG 1 box
 	METHOD method_2059 contains (Lnet/minecraft/class_649;)Z
-		ARG 1 vec
+		COMMENT Checks if the given position is in this box.
+		ARG 1 pos
 	METHOD method_2060 (Lnet/minecraft/class_649;Lnet/minecraft/class_649;)Lnet/minecraft/class_647;
 		ARG 1 vec1
 		ARG 2 vec2
@@ -40,11 +46,16 @@ CLASS net/minecraft/class_646 net/minecraft/util/math/Box
 		ARG 3 y
 		ARG 5 z
 	METHOD method_2063 intersects (Lnet/minecraft/class_646;)Z
+		COMMENT Checks if this box intersects the given box.
+		ARG 1 box
+	METHOD method_2064 (Lnet/minecraft/class_646;D)D
 		ARG 1 box
 	METHOD method_2066 offset (DDD)Lnet/minecraft/class_646;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD method_2067 (Lnet/minecraft/class_646;D)D
+		ARG 1 box
 	METHOD method_2069 increment (DDD)Lnet/minecraft/class_646;
 		ARG 1 x
 		ARG 3 y

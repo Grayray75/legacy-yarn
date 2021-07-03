@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_1400 net/minecraft/util/math/Vec3i
 	FIELD field_5895 x I
-	FIELD field_5896 INSTANCE Lnet/minecraft/class_1400;
+	FIELD field_5896 ZERO Lnet/minecraft/class_1400;
 	FIELD field_5897 y I
 	FIELD field_5898 z I
 	METHOD <init> (DDD)V

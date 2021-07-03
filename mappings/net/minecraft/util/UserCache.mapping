@@ -3,8 +3,12 @@ CLASS net/minecraft/class_1649 net/minecraft/util/UserCache
 	FIELD field_6778 gson Lcom/google/gson/Gson;
 	FIELD field_6779 byName Ljava/util/Map;
 	FIELD field_6780 byUuid Ljava/util/Map;
+	FIELD field_6782 server Lnet/minecraft/server/MinecraftServer;
 	FIELD field_6783 cacheFile Ljava/io/File;
 	FIELD field_6784 ENTRY_LIST_TYPE Ljava/lang/reflect/ParameterizedType;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/io/File;)V
+		ARG 1 server
+		ARG 2 cacheFile
 	METHOD method_6149 add (Lcom/mojang/authlib/GameProfile;)V
 	METHOD method_6150 add (Lcom/mojang/authlib/GameProfile;Ljava/util/Date;)V
 		ARG 1 profile
@@ -16,6 +20,9 @@ CLASS net/minecraft/class_1649 net/minecraft/util/UserCache
 	CLASS class_1650 Entry
 		FIELD field_6787 profile Lcom/mojang/authlib/GameProfile;
 		FIELD field_6788 expirationDate Ljava/util/Date;
+		METHOD <init> (Lnet/minecraft/class_1649;Lcom/mojang/authlib/GameProfile;Ljava/util/Date;)V
+			ARG 2 profile
+			ARG 3 expirationDate
 		METHOD method_6157 getProfile ()Lcom/mojang/authlib/GameProfile;
 		METHOD method_6159 getExpirationDate ()Ljava/util/Date;
 	CLASS class_1651 JsonConverter

@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_1372 net/minecraft/util/math/BlockPos
 	FIELD field_5767 ORIGIN Lnet/minecraft/class_1372;
+		COMMENT The block position which x, y, and z values are all zero.
 	FIELD field_5768 SIZE_BITS_X I
 	FIELD field_5769 SIZE_BITS_Z I
 	FIELD field_5770 SIZE_BITS_Y I
@@ -9,11 +10,11 @@ CLASS net/minecraft/class_1372 net/minecraft/util/math/BlockPos
 	FIELD field_5774 BITS_Y J
 	FIELD field_5775 BITS_Z J
 	METHOD <init> (Lnet/minecraft/class_1400;)V
-		ARG 1 vec
+		ARG 1 pos
 	METHOD <init> (Lnet/minecraft/class_1745;)V
 		ARG 1 entity
 	METHOD <init> (Lnet/minecraft/class_649;)V
-		ARG 1 vec
+		ARG 1 pos
 	METHOD method_4864 up ()Lnet/minecraft/class_1372;
 	METHOD method_4865 add (DDD)Lnet/minecraft/class_1372;
 		ARG 1 x
@@ -32,7 +33,7 @@ CLASS net/minecraft/class_1372 net/minecraft/util/math/BlockPos
 		ARG 1 direction
 	METHOD method_4870 offset (Lnet/minecraft/class_1383;I)Lnet/minecraft/class_1372;
 		ARG 1 facing
-		ARG 2 amount
+		ARG 2 distance
 	METHOD method_4871 add (Lnet/minecraft/class_1400;)Lnet/minecraft/class_1372;
 		ARG 1 pos
 	METHOD method_4872 down ()Lnet/minecraft/class_1372;

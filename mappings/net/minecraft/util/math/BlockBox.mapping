@@ -5,10 +5,28 @@ CLASS net/minecraft/class_476 net/minecraft/util/math/BlockBox
 	FIELD field_1978 maxX I
 	FIELD field_1979 maxY I
 	FIELD field_1980 maxZ I
+	METHOD <init> (IIII)V
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+	METHOD <init> (IIIIII)V
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 max
+	METHOD <init> (Lnet/minecraft/class_1400;Lnet/minecraft/class_1400;)V
+		ARG 1 v1
+		ARG 2 v2
+	METHOD <init> (Lnet/minecraft/class_476;)V
+		ARG 1 source
 	METHOD <init> ([I)V
-		ARG 1 args
+		ARG 1 data
 	METHOD method_1578 empty ()Lnet/minecraft/class_476;
-	METHOD method_1579 offset (III)V
+		COMMENT Creates an empty box.
+	METHOD method_1579 move (III)V
 		ARG 1 dx
 		ARG 2 dy
 		ARG 3 dz
@@ -41,8 +59,10 @@ CLASS net/minecraft/class_476 net/minecraft/util/math/BlockBox
 	METHOD method_1585 encompass (Lnet/minecraft/class_476;)V
 		ARG 1 region
 	METHOD method_1586 contains (Lnet/minecraft/class_1400;)Z
-		ARG 1 vec
+		ARG 1 pos
 	METHOD method_1587 getBlockCountX ()I
 	METHOD method_1588 getBlockCountY ()I
 	METHOD method_1589 getBlockCountZ ()I
+	METHOD method_1590 getCenter ()Lnet/minecraft/class_1400;
+		COMMENT @implNote Biased toward the minimum bound corner of the box.
 	METHOD method_1591 toNbt ()Lnet/minecraft/class_1409;

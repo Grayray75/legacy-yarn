@@ -9,12 +9,15 @@ CLASS net/minecraft/class_1728 net/minecraft/util/snooper/Snooper
 	FIELD field_7228 startTime J
 	FIELD field_7229 active Z
 	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1729;J)V
+		ARG 1 urlPath
 		ARG 2 snooped
+		ARG 3 startTime
 	METHOD method_6776 addInfo (Ljava/lang/String;Ljava/lang/Object;)V
 	METHOD method_6778 addCpuInfo ()V
 	METHOD method_6779 add (Ljava/lang/String;Ljava/lang/Object;)V
 	METHOD method_6783 isActive ()Z
 	METHOD method_6785 concel ()V
 	METHOD method_6787 getSnooperToken ()Ljava/lang/String;
+	METHOD method_6789 getStartTime ()J
 	METHOD method_6791 addJavaInfo ()V
 	METHOD method_6793 addJvmArgs ()V

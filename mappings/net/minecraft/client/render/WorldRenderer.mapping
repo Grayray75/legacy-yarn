@@ -29,6 +29,8 @@ CLASS net/minecraft/class_1036 net/minecraft/client/render/WorldRenderer
 	FIELD field_4451 chunks Lnet/minecraft/class_1045;
 	FIELD field_4456 starsBuffer Lnet/minecraft/class_1240;
 	FIELD field_4461 playingSongs Ljava/util/Map;
+	METHOD <init> (Lnet/minecraft/class_669;)V
+		ARG 1 client
 	METHOD method_3505 reload ()V
 	METHOD method_3509 onResized (II)V
 	METHOD method_3516 renderStars (Lnet/minecraft/class_1002;)V
