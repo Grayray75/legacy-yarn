@@ -55,20 +55,20 @@ CLASS net/minecraft/class_399 net/minecraft/world/chunk/Chunk
 		ARG 1 pos
 	METHOD method_1358 updateLight (Lnet/minecraft/class_1383;)V
 		ARG 1 dir
-	METHOD method_1359 (Ljava/lang/Class;Lnet/minecraft/class_646;Ljava/util/List;Lcom/google/common/base/Predicate;)V
-		ARG 1 clazz
+	METHOD method_1359 collectEntitiesByClass (Ljava/lang/Class;Lnet/minecraft/class_646;Ljava/util/List;Lcom/google/common/base/Predicate;)V
+		ARG 1 entityClass
 		ARG 2 box
-		ARG 3 list
-		ARG 4 pred
+		ARG 3 result
+		ARG 4 predicate
 	METHOD method_1360 (Lnet/minecraft/class_1745;)V
 		ARG 1 entity
 	METHOD method_1361 (Lnet/minecraft/class_1745;I)V
 		ARG 1 entity
-	METHOD method_1362 (Lnet/minecraft/class_1745;Lnet/minecraft/class_646;Ljava/util/List;Lcom/google/common/base/Predicate;)V
-		ARG 1 entity
+	METHOD method_1362 collectOtherEntities (Lnet/minecraft/class_1745;Lnet/minecraft/class_646;Ljava/util/List;Lcom/google/common/base/Predicate;)V
+		ARG 1 except
 		ARG 2 box
-		ARG 3 list
-		ARG 4 pred
+		ARG 3 result
+		ARG 4 predicate
 	METHOD method_1364 setBiomeArray ([B)V
 	METHOD method_1366 setLevelHeightmap ([I)V
 		ARG 1 heightmap
