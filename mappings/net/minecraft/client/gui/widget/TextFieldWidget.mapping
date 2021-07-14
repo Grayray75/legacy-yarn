@@ -47,6 +47,7 @@ CLASS net/minecraft/class_689 net/minecraft/client/gui/widget/TextFieldWidget
 	METHOD method_2517 setListener (Lnet/minecraft/class_703$class_705;)V
 		ARG 1 listener
 	METHOD method_2518 setTextPredicate (Lcom/google/common/base/Predicate;)V
+		ARG 1 predicate
 	METHOD method_2519 setText (Ljava/lang/String;)V
 		ARG 1 text
 	METHOD method_2520 setHasBorder (Z)V

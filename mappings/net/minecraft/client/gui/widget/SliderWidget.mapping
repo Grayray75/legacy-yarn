@@ -11,5 +11,7 @@ CLASS net/minecraft/class_690 net/minecraft/client/gui/widget/SliderWidget
 		ARG 4 y
 		ARG 6 min
 		ARG 7 max
+	METHOD method_2548 setProgress (F)V
+		ARG 1 value
 	METHOD method_2551 getProgress ()F
 		COMMENT Returns a progress value between 0 and 1

@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_695 net/minecraft/client/gui/widget/ToggleButtonWidget
+	FIELD field_2946 toggled Z
+	FIELD field_2947 translationKey Ljava/lang/String;
+	FIELD field_2948 listener Lnet/minecraft/class_703$class_705;
+	METHOD <init> (Lnet/minecraft/class_703$class_705;IIILjava/lang/String;Z)V
+		ARG 1 listener
+		ARG 2 id
+		ARG 3 x
+		ARG 4 y
+		ARG 5 translationKey
+		ARG 6 toggled
+	METHOD method_2558 setToggled (Z)V
+		ARG 1 toggled
+	METHOD method_2559 getMessage ()Ljava/lang/String;

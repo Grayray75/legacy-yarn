@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_663
+	FIELD field_2487 ZERO Lnet/minecraft/class_649;
+	METHOD method_2185 (Lnet/minecraft/class_99;Lnet/minecraft/class_1745;F)Lnet/minecraft/class_160;
+		ARG 0 world
+		ARG 2 tickDelta
+	METHOD method_2186 (Lnet/minecraft/class_1745;D)Lnet/minecraft/class_649;
+		ARG 1 tickDelta
+	METHOD method_2187 (Lnet/minecraft/class_1963;Z)V
+		ARG 0 player
