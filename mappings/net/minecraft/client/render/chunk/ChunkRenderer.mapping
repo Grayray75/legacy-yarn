@@ -1,0 +1,44 @@
+CLASS net/minecraft/class_1111 net/minecraft/client/render/chunk/ChunkRenderer
+	FIELD field_4762 data Lnet/minecraft/class_1108;
+	FIELD field_4763 boundingBox Lnet/minecraft/class_646;
+	FIELD field_4764 world Lnet/minecraft/class_99;
+	FIELD field_4765 renderer Lnet/minecraft/class_1036;
+	FIELD field_4766 origin Lnet/minecraft/class_1372;
+	FIELD field_4767 lock Ljava/util/concurrent/locks/ReentrantLock;
+	FIELD field_4768 dataLock Ljava/util/concurrent/locks/ReentrantLock;
+	FIELD field_4769 task Lnet/minecraft/class_1103;
+	FIELD field_4770 blockEntities Ljava/util/Set;
+	FIELD field_4773 buffers [Lnet/minecraft/class_1240;
+	FIELD field_4776 neighborPositions Ljava/util/EnumMap;
+	METHOD <init> (Lnet/minecraft/class_99;Lnet/minecraft/class_1036;Lnet/minecraft/class_1372;I)V
+		ARG 1 world
+		ARG 2 worldRenderer
+	METHOD method_3810 delete ()V
+	METHOD method_3811 resortTransparency (FFFLnet/minecraft/class_1103;)V
+		ARG 4 renderTask
+	METHOD method_3813 endBufferBuilding (Lnet/minecraft/class_91;FFFLnet/minecraft/class_1002;Lnet/minecraft/class_1108;)V
+		ARG 1 layer
+		ARG 5 builder
+	METHOD method_3814 beginBufferBuilding (Lnet/minecraft/class_1002;Lnet/minecraft/class_1372;)V
+		ARG 1 builder
+		ARG 2 pos
+	METHOD method_3815 setData (Lnet/minecraft/class_1108;)V
+		ARG 1 data
+	METHOD method_3816 setOrigin (Lnet/minecraft/class_1372;)V
+		ARG 1 pos
+	METHOD method_3817 getNeighborPosition (Lnet/minecraft/class_1383;)Lnet/minecraft/class_1372;
+		ARG 1 direction
+	METHOD method_3818 scheduleRebuild (Z)V
+	METHOD method_3819 cancel ()V
+	METHOD method_3820 rebuildChunk (FFFLnet/minecraft/class_1103;)V
+		ARG 1 cameraX
+		ARG 2 cameraY
+		ARG 3 cameraZ
+		ARG 4 task
+	METHOD method_3821 getGlBuffer (I)Lnet/minecraft/class_1240;
+		ARG 1 layer
+	METHOD method_3822 getLock ()Ljava/util/concurrent/locks/ReentrantLock;
+	METHOD method_3823 startRebuild ()Lnet/minecraft/class_1103;
+	METHOD method_3824 startResortTransparency ()Lnet/minecraft/class_1103;
+	METHOD method_3827 clear ()V
+	METHOD method_3828 getOrigin ()Lnet/minecraft/class_1372;

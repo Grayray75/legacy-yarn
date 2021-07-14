@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_1108 net/minecraft/client/render/chunk/ChunkRenderData
+	FIELD field_4753 EMPTY Lnet/minecraft/class_1108;
+	FIELD field_4754 nonEmpty [Z
+	FIELD field_4755 initialized [Z
+	FIELD field_4756 empty Z
+	FIELD field_4757 blockEntities Ljava/util/List;
+	FIELD field_4758 occlusionGraph Lnet/minecraft/class_1115;
+	FIELD field_4759 bufferState Lnet/minecraft/class_1002$class_1003;
+	METHOD method_3798 isEmpty ()Z
+	METHOD method_3799 setNonEmpty (Lnet/minecraft/class_91;)V
+		ARG 1 layer
+	METHOD method_3800 addBlockEntity (Lnet/minecraft/class_348;)V
+		ARG 1 blockEntity
+	METHOD method_3801 setBufferState (Lnet/minecraft/class_1002$class_1003;)V
+		ARG 1 state
+	METHOD method_3802 setOcclusionGraph (Lnet/minecraft/class_1115;)V
+		ARG 1 data
+	METHOD method_3803 isVisibleThrough (Lnet/minecraft/class_1383;Lnet/minecraft/class_1383;)Z
+		ARG 1 dir1
+		ARG 2 dir2
+	METHOD method_3804 getBlockEntities ()Ljava/util/List;
+	METHOD method_3805 isEmpty (Lnet/minecraft/class_91;)Z
+		ARG 1 layer
+	METHOD method_3806 getBufferState ()Lnet/minecraft/class_1002$class_1003;
+	METHOD method_3807 markBufferInitialized (Lnet/minecraft/class_91;)V
+		ARG 1 layer
+	METHOD method_3808 isBufferInitialized (Lnet/minecraft/class_91;)Z
+		ARG 1 layer

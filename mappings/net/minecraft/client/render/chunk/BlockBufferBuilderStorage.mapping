@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1006 net/minecraft/client/render/chunk/BlockBufferBuilderStorage
+	FIELD field_4217 layerBuilders [Lnet/minecraft/class_1002;
+	METHOD method_3343 get (I)Lnet/minecraft/class_1002;
+		ARG 1 index
+	METHOD method_3344 get (Lnet/minecraft/class_91;)Lnet/minecraft/class_1002;
+		ARG 1 layer

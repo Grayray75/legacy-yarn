@@ -1,0 +1,30 @@
+CLASS net/minecraft/class_1103 net/minecraft/client/render/chunk/ChunkRenderTask
+	FIELD field_4711 chunkRenderer Lnet/minecraft/class_1111;
+	FIELD field_4712 lock Ljava/util/concurrent/locks/ReentrantLock;
+	FIELD field_4713 tasks Ljava/util/List;
+	FIELD field_4714 mode Lnet/minecraft/class_1103$class_1105;
+	FIELD field_4715 bufferBuilder Lnet/minecraft/class_1006;
+	FIELD field_4716 renderData Lnet/minecraft/class_1108;
+	FIELD field_4717 stage Lnet/minecraft/class_1103$class_1104;
+	FIELD field_4718 cancelled Z
+	METHOD <init> (Lnet/minecraft/class_1111;Lnet/minecraft/class_1103$class_1105;)V
+		ARG 1 chunkRenderer
+		ARG 2 mode
+	METHOD method_3766 getStage ()Lnet/minecraft/class_1103$class_1104;
+	METHOD method_3767 setBufferBuilder (Lnet/minecraft/class_1006;)V
+		ARG 1 bufferBuilder
+	METHOD method_3768 setStage (Lnet/minecraft/class_1103$class_1104;)V
+		ARG 1 stage
+	METHOD method_3769 setRenderData (Lnet/minecraft/class_1108;)V
+		ARG 1 renderData
+	METHOD method_3770 addCompletionAction (Ljava/lang/Runnable;)V
+		ARG 1 action
+	METHOD method_3771 getChunkRenderer ()Lnet/minecraft/class_1111;
+	METHOD method_3772 getChunkAssemblyHelper ()Lnet/minecraft/class_1108;
+	METHOD method_3773 getBufferBuilder ()Lnet/minecraft/class_1006;
+	METHOD method_3774 cancel ()V
+	METHOD method_3775 getLock ()Ljava/util/concurrent/locks/ReentrantLock;
+	METHOD method_3776 getMode ()Lnet/minecraft/class_1103$class_1105;
+	METHOD method_3777 isCancelled ()Z
+	CLASS class_1104 Stage
+	CLASS class_1105 Mode
