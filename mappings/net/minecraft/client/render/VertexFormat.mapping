@@ -1,30 +1,13 @@
 CLASS net/minecraft/class_1241 net/minecraft/client/render/VertexFormat
 	FIELD field_5187 LOGGER Lorg/apache/logging/log4j/Logger;
 	FIELD field_5188 elements Ljava/util/List;
-	FIELD field_5189 offsets Ljava/util/List;
-	FIELD field_5190 size I
-	FIELD field_5191 offsetColor I
-	FIELD field_5192 offsetsUv Ljava/util/List;
-	FIELD field_5193 offsetNormal I
 	METHOD <init> (Lnet/minecraft/class_1241;)V
 		ARG 1 format
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 obj
-	METHOD method_4312 clear ()V
-	METHOD method_4313 hasUvElement (I)Z
-	METHOD method_4314 add (Lnet/minecraft/class_1242;)Lnet/minecraft/class_1241;
+	METHOD method_4314 addElement (Lnet/minecraft/class_1242;)Lnet/minecraft/class_1241;
 		ARG 1 element
-	METHOD method_4315 hasNormalElement ()Z
-	METHOD method_4316 getUvOffset (I)I
-	METHOD method_4317 getNormalOffset ()I
-	METHOD method_4318 getElement (I)Lnet/minecraft/class_1242;
-		ARG 1 index
-	METHOD method_4319 hasColorElement ()Z
-	METHOD method_4320 getElementOffset (I)I
-		ARG 1 element
-	METHOD method_4321 getColorOffset ()I
-	METHOD method_4322 getVertexSizeInteger ()I
-	METHOD method_4323 getVertexSize ()I
+	METHOD method_4318 get (I)Lnet/minecraft/class_1242;
+		ARG 1 i
 	METHOD method_4324 getElements ()Ljava/util/List;
 	METHOD method_4325 getSize ()I
-	METHOD method_4326 hasPositionElement ()Z
