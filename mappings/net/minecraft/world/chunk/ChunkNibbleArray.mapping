@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_397 net/minecraft/world/chunk/ChunkNibbleArray
-	FIELD field_1561 value [B
+	FIELD field_1561 bytes [B
 	METHOD <init> ([B)V
-		ARG 1 value
+		ARG 1 bytes
 	METHOD method_1335 getValue ()[B
 	METHOD method_1336 get (I)I
 		ARG 1 index

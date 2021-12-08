@@ -1,10 +1,27 @@
 CLASS net/minecraft/class_1705 net/minecraft/util/profiler/Profiler
+	FIELD field_7156 enabled Z
+	FIELD field_7157 LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD field_7158 path Ljava/util/List;
+	FIELD field_7159 timeList Ljava/util/List;
+	FIELD field_7160 fullLocation Ljava/lang/String;
+	FIELD field_7161 profilingLocationTimes Ljava/util/Map;
+	METHOD method_6667 reset ()V
 	METHOD method_6668 push (Ljava/lang/String;)V
 		ARG 1 location
 	METHOD method_6669 pop ()V
+	METHOD method_6670 getData (Ljava/lang/String;)Ljava/util/List;
+		ARG 1 location
+	METHOD method_6671 getCurrentLocation ()Ljava/lang/String;
 	METHOD method_6672 swap (Ljava/lang/String;)V
 		ARG 1 location
-	CLASS class_1706 Entry
+	CLASS class_1706 Section
+		FIELD field_7162 relativePercentage D
+		FIELD field_7163 absolutePercentage D
 		FIELD field_7164 name Ljava/lang/String;
 		METHOD <init> (Ljava/lang/String;DD)V
 			ARG 1 name
+			ARG 2 relativePercentage
+			ARG 4 absolutePercentage
+		METHOD compareTo (Ljava/lang/Object;)I
+			ARG 1 other
+		METHOD method_6673 getColor ()I

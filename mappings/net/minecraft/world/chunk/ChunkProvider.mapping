@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_396 net/minecraft/world/chunk/ChunkProvider
 	METHOD method_1321 chunkExists (II)Z
-		ARG 1 chunkX
-		ARG 2 chunkZ
+		ARG 1 x
+		ARG 2 z
 	METHOD method_1322 getNearestStructurePos (Lnet/minecraft/class_99;Ljava/lang/String;Lnet/minecraft/class_1372;)Lnet/minecraft/class_1372;
 		ARG 1 world
 		ARG 2 structureName
@@ -10,7 +10,7 @@ CLASS net/minecraft/class_396 net/minecraft/world/chunk/ChunkProvider
 		ARG 1 provider
 		ARG 2 x
 		ARG 3 z
-	METHOD method_1324 (Lnet/minecraft/class_396;Lnet/minecraft/class_399;II)Z
+	METHOD method_1324 isChunkModified (Lnet/minecraft/class_396;Lnet/minecraft/class_399;II)Z
 		ARG 1 chunkProvider
 		ARG 2 chunk
 		ARG 3 x
@@ -27,6 +27,7 @@ CLASS net/minecraft/class_396 net/minecraft/world/chunk/ChunkProvider
 	METHOD method_1328 saveChunks (ZLnet/minecraft/class_1707;)Z
 		ARG 1 saveEntities
 		ARG 2 progressListener
+	METHOD method_1329 flushChunks ()V
 	METHOD method_1330 tickChunks ()Z
 	METHOD method_1331 getChunk (II)Lnet/minecraft/class_399;
 		ARG 1 x

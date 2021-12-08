@@ -1,9 +1,14 @@
 CLASS net/minecraft/class_401 net/minecraft/world/chunk/ChunkSection
+	FIELD field_1597 yOffset I
+	FIELD field_1598 containedBlockCount I
+	FIELD field_1599 tickableBlockCount I
 	FIELD field_1600 blockStates [C
 	FIELD field_1601 blockLight Lnet/minecraft/class_397;
 	FIELD field_1602 skyLight Lnet/minecraft/class_397;
 	METHOD <init> (IZ)V
+		ARG 1 yOffset
 		ARG 2 skyLightEnabled
+	METHOD method_1421 isEmpty ()Z
 	METHOD method_1422 getBlockState (III)Lnet/minecraft/class_376;
 		ARG 1 x
 		ARG 2 y
@@ -13,7 +18,7 @@ CLASS net/minecraft/class_401 net/minecraft/world/chunk/ChunkSection
 		ARG 2 y
 		ARG 3 z
 		ARG 4 light
-	METHOD method_1424 (IIILnet/minecraft/class_376;)V
+	METHOD method_1424 setBlockState (IIILnet/minecraft/class_376;)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -22,6 +27,7 @@ CLASS net/minecraft/class_401 net/minecraft/world/chunk/ChunkSection
 		ARG 1 blockLight
 	METHOD method_1426 setBlockStates ([C)V
 		ARG 1 blockStates
+	METHOD method_1427 hasTickableBlocks ()Z
 	METHOD method_1428 getBlockAtPos (III)Lnet/minecraft/class_160;
 		ARG 1 x
 		ARG 2 y
@@ -37,10 +43,12 @@ CLASS net/minecraft/class_401 net/minecraft/world/chunk/ChunkSection
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_1432 getYOffset ()I
 	METHOD method_1433 getSkyLight (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_1434 calculateCounts ()V
 	METHOD method_1435 getBlockLight (III)I
 		ARG 1 x
 		ARG 2 y
