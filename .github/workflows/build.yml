@@ -32,7 +32,7 @@ jobs:
 
       - uses: gradle/gradle-build-action@v2
         with:
-          gradle-version: '7.2.x'
+          gradle-version: '8.2.1'
           cache-read-only: false
 
       - run: gradle build javadocJar checkMappings mapNamedJar unifyMappings --stacktrace
