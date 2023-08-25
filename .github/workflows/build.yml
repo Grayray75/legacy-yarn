@@ -25,13 +25,11 @@ jobs:
         MC_VERSION: ${{ matrix.mc_version }}
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v3
-        with:
-          python-version: '3.x'
       - uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '17'
-      - run: python ./yarn.py $MC_VERSION build javadocJar checkMappings mapNamedJar --stacktrace
-      - run: python ./yarn.py $MC_VERSION publishToMavenLocal --stacktrace
+
+      - run: ./gradlew build javadocJar checkMappings mapNamedJar unifyMappings --stacktrace
+      - run: ./gradlew publishToMavenLocal unifyMappings --stacktrace
       - run: cd test-mod && ./gradlew build genSources
