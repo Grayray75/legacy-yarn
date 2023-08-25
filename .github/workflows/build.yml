@@ -33,7 +33,7 @@ jobs:
       - uses: gradle/gradle-build-action@v2
         with:
           gradle-version: '7.2.x'
-          cache-read-only: ${{ matrix.mc_version != "1.8.9" }}
+          cache-read-only: ${{ ! matrix.mc_version == "1.8.9" }}
 
       - run: gradle build javadocJar checkMappings mapNamedJar unifyMappings --stacktrace
       - run: gradle publishToMavenLocal unifyMappings --stacktrace
