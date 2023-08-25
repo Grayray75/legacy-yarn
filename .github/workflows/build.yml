@@ -30,6 +30,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - run: ./gradlew build javadocJar checkMappings mapNamedJar unifyMappings --stacktrace
-      - run: ./gradlew publishToMavenLocal unifyMappings --stacktrace
-      - run: cd test-mod && ./gradlew build genSources
+      - uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: 'wrapper'
+
+      - run: gradle build javadocJar checkMappings mapNamedJar unifyMappings --stacktrace
+      - run: gradle publishToMavenLocal unifyMappings --stacktrace
+      - run: cd test-mod && gradle build genSources
