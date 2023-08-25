@@ -35,6 +35,5 @@ jobs:
           gradle-version: '8.2.1'
           cache-read-only: false
 
-      - run: gradle build javadocJar checkMappings mapNamedJar unifyMappings --stacktrace
-      - run: gradle publishToMavenLocal unifyMappings --stacktrace
+      - run: gradle build javadocJar checkMappings mapNamedJar publishToMavenLocal unifyMappings --stacktrace
       - run: cd test-mod && gradle build genSources
