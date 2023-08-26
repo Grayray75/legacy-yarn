@@ -32,8 +32,7 @@ jobs:
 
       - uses: gradle/gradle-build-action@v2
         with:
-          gradle-version: '8.2.1'
-          cache-read-only: false
+          cache-read-only: true
 
       - run: gradle build javadocJar checkMappings mapNamedJar unifyMappings --stacktrace
       - run: gradle publishToMavenLocal unifyMappings --stacktrace
