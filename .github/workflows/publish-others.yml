@@ -1,7 +1,6 @@
-name: Publish Other Versions
+name: Build and Publish other Versions
 
-on:
-  workflow_dispatch:
+on: [workflow_dispatch]
 
 jobs:
   publish:
