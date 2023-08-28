@@ -1,0 +1,48 @@
+CLASS net/minecraft/class_3282 net/minecraft/client/gui/screen/recipebook/RecipeBookWidget
+	FIELD field_16042 TEXTURE Lnet/minecraft/class_1653;
+	FIELD field_16043 leftOffset I
+	FIELD field_16044 parentWidth I
+	FIELD field_16045 parentHeight I
+	FIELD field_16046 ghostSlots Lnet/minecraft/class_3278;
+	FIELD field_16047 tabButtons Ljava/util/List;
+	FIELD field_16048 currentTab Lnet/minecraft/class_3284;
+	FIELD field_16049 toggleCraftableButton Lnet/minecraft/class_3257;
+	FIELD field_16050 craftingInventory Lnet/minecraft/class_1011;
+	FIELD field_16051 client Lnet/minecraft/class_1600;
+	FIELD field_16052 searchField Lnet/minecraft/class_367;
+	FIELD field_16053 searchText Ljava/lang/String;
+	FIELD field_16054 recipeBook Lnet/minecraft/class_3355;
+	FIELD field_16055 recipesArea Lnet/minecraft/class_3283;
+	FIELD field_16056 recipeFinder Lnet/minecraft/class_3175;
+	FIELD field_16057 cachedInvChangeCount I
+	METHOD method_14575 render (IIF)V
+		ARG 1 mouseX
+		ARG 2 mouseY
+		ARG 3 delta
+	METHOD method_14577 initialize (IILnet/minecraft/class_1600;ZLnet/minecraft/class_1011;)V
+		ARG 1 parentWidth
+		ARG 2 parentHeight
+		ARG 3 client
+		ARG 4 narrow
+		ARG 5 craftingInventory
+	METHOD method_14578 (IIZF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 4 delta
+	METHOD method_14579 (Lnet/minecraft/class_1026;)V
+		ARG 1 slot
+	METHOD method_14586 reset (ZLnet/minecraft/class_1011;)V
+		ARG 1 narrow
+		ARG 2 craftingInventory
+	METHOD method_14589 refreshResults (Z)V
+		ARG 1 resetCurrentPage
+	METHOD method_14590 isOpen ()Z
+	METHOD method_14591 drawTooltip (IIII)V
+		ARG 3 mouseX
+		ARG 4 mouseY
+	METHOD method_14594 update ()V
+	METHOD method_14595 drawGhostSlotTooltip (IIII)V
+		ARG 3 mouseX
+		ARG 4 mouseY
+	METHOD method_14598 refreshTabButtons ()V
+	METHOD method_14599 refreshInputs ()V

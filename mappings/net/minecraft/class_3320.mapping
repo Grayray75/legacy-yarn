@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_3320
+	FIELD field_16242 getResultsForGroup Ljava/util/Map;

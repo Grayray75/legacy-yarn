@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_3283 net/minecraft/client/gui/screen/recipebook/RecipeBookResults
+	METHOD method_14603 drawTooltip (II)V
+	METHOD method_14604 draw (IIIIF)V
+	METHOD method_14606 initialize (Lnet/minecraft/class_1600;II)V
+	METHOD method_14607 setGui (Lnet/minecraft/class_3282;)V
+	METHOD method_14609 setResults (Ljava/util/List;Z)V

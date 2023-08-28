@@ -1,6 +1,7 @@
-CLASS net/minecraft/class_1114 net/minecraft/recipe/RecipeType
+CLASS net/minecraft/class_1114 net/minecraft/recipe/Recipe
 	METHOD method_3499 getSize ()I
 	METHOD method_3500 matches (Lnet/minecraft/class_1011;Lnet/minecraft/class_1150;)Z
+		COMMENT Determines whether this recipe matches the contents currently placed inside the available crafting grid.
 		ARG 1 inventory
 		ARG 2 world
 	METHOD method_3501 getOutput ()Lnet/minecraft/class_1071;

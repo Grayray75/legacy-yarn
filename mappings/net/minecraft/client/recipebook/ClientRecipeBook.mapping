@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_3355 net/minecraft/client/recipebook/ClientRecipeBook
+	FIELD field_16471 bookOpen Z
+	FIELD field_16472 filterActive Z
+	METHOD method_14986 isFilteringCraftable ()Z

@@ -9,6 +9,8 @@ CLASS net/minecraft/class_987 net/minecraft/entity/player/PlayerInventory
 		ARG 1 player
 	METHOD method_11232 (Lnet/minecraft/class_1069;IILnet/minecraft/class_322;)I
 		ARG 4 nbt
+	METHOD method_14148 populateRecipeFinder (Lnet/minecraft/class_3175;Z)V
+	METHOD method_14153 getChangeCount ()I
 	METHOD method_3125 getMiningSpeed (Lnet/minecraft/class_197;)F
 		ARG 1 block
 	METHOD method_3126 serialize (Lnet/minecraft/class_474;)Lnet/minecraft/class_474;

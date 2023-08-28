@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_3286 net/minecraft/RecipeResultCollection
+	METHOD method_14625 isInitialized ()Z
+	METHOD method_14626 computeCraftables (Lnet/minecraft/class_3175;IILnet/minecraft/class_3355;)V
+	METHOD method_14630 hasCraftableRecipes ()Z
+	METHOD method_14633 hasFittingRecipes ()Z

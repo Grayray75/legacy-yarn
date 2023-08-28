@@ -1,0 +1,31 @@
+CLASS net/minecraft/class_3278 net/minecraft/client/gui/screen/recipebook/RecipeBookGhostSlots
+	FIELD field_16023 recipe Lnet/minecraft/class_1114;
+	FIELD field_16024 slots Ljava/util/List;
+	FIELD field_16025 time F
+	METHOD method_14551 reset ()V
+	METHOD method_14552 getSlot (I)Lnet/minecraft/class_3278$class_3279;
+		ARG 1 index
+	METHOD method_14553 addSlot (Lnet/minecraft/class_3193;II)V
+		ARG 1 ingredient
+		ARG 2 x
+		ARG 3 y
+	METHOD method_14554 setRecipe (Lnet/minecraft/class_1114;)V
+		ARG 1 recipe
+	METHOD method_14555 draw (Lnet/minecraft/class_1600;IIZF)V
+		ARG 1 client
+		ARG 2 x
+		ARG 3 y
+		ARG 5 delta
+	METHOD method_14557 getSlotCount ()I
+	METHOD method_14558 getRecipe ()Lnet/minecraft/class_1114;
+	CLASS class_3279 GhostInputSlot
+		FIELD field_16027 ingredient Lnet/minecraft/class_3193;
+		FIELD field_16028 x I
+		FIELD field_16029 y I
+		METHOD <init> (Lnet/minecraft/class_3278;Lnet/minecraft/class_3193;II)V
+			ARG 2 ingredient
+			ARG 3 x
+			ARG 4 y
+		METHOD method_14559 getX ()I
+		METHOD method_14560 getY ()I
+		METHOD method_14561 getCurrentItemStack ()Lnet/minecraft/class_1071;

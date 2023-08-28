@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_3284 net/minecraft/client/gui/screen/recipebook/RecipeGroupButtonWidget
+	METHOD method_14614 checkForNewRecipes (Lnet/minecraft/class_1600;)V
+	METHOD method_14616 getCategory ()Lnet/minecraft/class_1041;
+	METHOD method_14617 hasKnownRecipes ()Z
